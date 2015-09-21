@@ -3,10 +3,10 @@
 (defn- test-prime
   "Determine if a number is prime by looping through divisors"
   [x]
-  (loop [n (Math/floor (Math/sqrt x))]
-    (if (= n 1.0)
+  (loop [n (int (Math/sqrt x))]
+    (if (= n 1)
       true
-      (if (= 0.0 (mod x n))
+      (if (= 0 (mod x n))
         false
         (recur (dec n))))))
 
