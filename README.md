@@ -2,7 +2,7 @@
 
 A Clojure library that evaluates if a number is prime.
 
-**Note:** This is just me learning some clojure, and probably not good.
+[![Build Status](http://img.shields.io/travis/fardog/is-prime/master.svg?style=flat-square)](https://travis-ci.org/fardog/is-prime)
 
 ## Usage
 

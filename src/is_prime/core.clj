@@ -3,12 +3,12 @@
 (defn- test-prime
   "Determine if a number is prime by looping through divisors"
   [x]
-  (loop [n (int (Math/sqrt x))]
-    (if (= n 1)
+  (loop [iter 2 top (int (Math/sqrt x))]
+    (if (> iter top)
       true
-      (if (= 0 (mod x n))
+      (if (= 0 (mod x iter))
         false
-        (recur (dec n))))))
+        (recur (inc iter) top)))))
 
 (defn is-prime
   "Determines if a given integer is prime."
